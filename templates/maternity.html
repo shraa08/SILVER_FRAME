@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Maternity Gallery | AN Photography</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/wedding.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<section class="gallery-hero">
+
+    <img src="{{ url_for('static', filename='images/maternity/hero.jpeg') }}">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>Maternity Gallery</h1>
+
+        <p>
+            Celebrating the beautiful journey of motherhood with timeless memories.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="gallery" class="masonry-gallery">
+
+    <div class="landscape">
+        <img src="{{ url_for('static', filename='images/maternity/1.jpeg') }}">
+    </div>
+
+    <div class="portrait-grid">
+        <img src="{{ url_for('static', filename='images/maternity/2.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/maternity/3.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/maternity/4.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/maternity/5.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/maternity/6.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/maternity/7.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/maternity/8.JPG') }}">
+        <img src="{{ url_for('static', filename='images/maternity/9.JPG') }}">
+        <img src="{{ url_for('static', filename='images/maternity/10.JPG') }}">
+        <img src="{{ url_for('static', filename='images/maternity/11.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/maternity/12.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/maternity/13.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/maternity/14.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/maternity/15.jpeg') }}">
+    </div>
+
+
+    
+</section>
+
+<footer class="footer">
+
+    <div class="footer-icons">
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+        <a href="#"><i class="fab fa-youtube"></i></a>
+
+    </div>
+
+    <p>
+        © AN Photography | Capturing Timeless Memories
+    </p>
+
+</footer>
+
+</body>
+</html>

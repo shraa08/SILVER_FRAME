@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AN Photography</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500&family=Allura&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<script>
+    alert("{{ messages[0] }}");
+</script>
+{% endif %}
+{% endwith %}
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/book">Book Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- BOOK US SECTION -->
+
+    <section class="book-section">
+
+        <div class="book-container">
+
+            <h1 class="book-title">
+                ENQUIRY FOR <br> QUOTATION
+            </h1>
+
+            <p class="book-sub">
+                If you haven't received a response, feel free to call us at
+                <a href="tel:+919373649585">+91 9373649585</a>
+                for more information.
+            </p>
+
+            <!-- ONLY ONE FORM -->
+
+            <form action="{{ url_for('book') }}" method="POST" class="book-form">
+
+                <div class="row">
+
+                    <div class="field">
+                        <label>Name *</label>
+                        <input type="text" name="first_name" placeholder="First" required>
+                    </div>
+
+                    <div class="field">
+                        <label>&nbsp;</label>
+                        <input type="text" name="last_name" placeholder="Last" required>
+                    </div>
+
+                </div>
+
+                <div class="field">
+                    <label>Mobile Number *</label>
+                    <input type="text" name="mobile" required>
+                </div>
+
+                <div class="field">
+                    <label>Your Location *</label>
+                    <input type="text" name="location" required>
+                </div>
+
+                <div class="field">
+                    <label>Email *</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="field">
+
+                    <label>Category *</label>
+
+                    <div class="checkbox-group">
+
+                        <label>
+                            <input type="checkbox" name="category" value="Wedding">
+                            Wedding
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="category" value="Pre Wedding">
+                            Pre Wedding
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="category" value="Engagement">
+                            Engagement
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="category" value="Maternity">
+                            Maternity
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="category" value="New Born Baby Shoot">
+                            New Born Baby Shoot
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Submit
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- PHOTO SECTION -->
+
+    <section class="book-gallery">
+
+        <div class="book-gallery-grid">
+
+            <img src="{{ url_for('static', filename='images/book1.JPG') }}" alt="">
+
+            <img src="{{ url_for('static', filename='images/book2.JPG') }}" alt="">
+
+            <img src="{{ url_for('static', filename='images/book3.JPG') }}" alt="">
+
+        </div>
+
+        <div class="social-icons">
+
+            <a href="https://www.instagram.com/abhijitnaikare_photography?utm_source=qr&igsh=MTJlYWw3NDd5b3lhZQ==" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/message/FWDNQPSUROA6K1" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="https://youtube.com/@kathashortss?si=LOLkoHupBWIJM8Tg" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+
+        <p class="book-signature">
+            © Abhijit Naikare Photography, Pune, India
+            <br>
+            Website Design by Shravani Shelke
+        </p>
+
+    </section>
+
+</body>
+
+</html>

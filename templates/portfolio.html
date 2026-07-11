@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Gallery | AN Photography</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/wedding.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<section class="gallery-hero">
+
+    <img src="{{ url_for('static', filename='images/portfolio/hero.jpeg') }}">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>Portfolio Gallery</h1>
+
+        <p>
+            A collection of timeless portraits, creative concepts and unforgettable moments.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="gallery" class="masonry-gallery">
+
+    <div class="landscape">
+        <img src="{{ url_for('static', filename='images/portfolio/1.jpeg') }}">
+    </div>
+
+    <div class="portrait-grid">
+        <img src="{{ url_for('static', filename='images/portfolio/2.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/portfolio/3.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/portfolio/4.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/portfolio/5.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/portfolio/6.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/portfolio/7.jpeg') }}">
+    </div>
+
+    <div class="landscape">
+        <img src="{{ url_for('static', filename='images/portfolio/8.jpeg') }}">
+    </div>
+
+    <div class="portrait-grid">
+        <img src="{{ url_for('static', filename='images/portfolio/9.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/portfolio/10.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/portfolio/11.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/portfolio/12.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/portfolio/13.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/portfolio/14.jpeg') }}">
+    </div>
+
+    <div class="landscape">
+        <img src="{{ url_for('static', filename='images/portfolio/15.jpg') }}">
+    </div>
+
+    
+</section>
+
+<footer class="footer">
+
+    <div class="footer-icons">
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+        <a href="#"><i class="fab fa-youtube"></i></a>
+
+    </div>
+
+    <p>
+        © 2026 AN Photography | Capturing Timeless Memories
+    </p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PreWedding Gallery | AN Photography</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/wedding.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="gallery-hero">
+
+    <img src="{{ url_for('static', filename='images/prewedding/hero.jpeg') }}">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>PreWedding Gallery</h1>
+
+        <p>
+            Capturing the beautiful moments before your forever journey begins.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery" class="masonry-gallery">
+
+    <!-- Landscape -->
+
+    <div class="landscape">
+        <img src="{{ url_for('static', filename='images/prewedding/1.jpeg') }}">
+    </div>
+
+    <!-- Portrait Grid -->
+
+    <div class="portrait-grid">
+
+        <img src="{{ url_for('static', filename='images/prewedding/2.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/prewedding/3.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/prewedding/4.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/prewedding/5.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/prewedding/6.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/prewedding/7.jpeg') }}">
+
+    </div>
+
+    <!-- Landscape -->
+
+    <div class="landscape">
+
+        <img src="{{ url_for('static', filename='images/prewedding/8.jpeg') }}">
+
+    </div>
+
+    <!-- Portrait -->
+
+    <div class="portrait-grid">
+
+        <img src="{{ url_for('static', filename='images/prewedding/9.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/prewedding/10.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/prewedding/11.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/prewedding/12.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/prewedding/13.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/prewedding/14.jpeg') }}">
+
+    </div>
+
+    <!-- Landscape -->
+
+    <div class="landscape">
+
+        <img src="{{ url_for('static', filename='images/prewedding/15.jpeg') }}">
+
+    </div>
+
+    <!-- Portrait -->
+
+    <div class="portrait-grid">
+
+        <img src="{{ url_for('static', filename='images/prewedding/16.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/prewedding/17.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/prewedding/18.jpeg') }}">
+    
+    </div>
+
+    <!-- Landscape -->
+
+    <div class="landscape">
+
+        <img src="{{ url_for('static', filename='images/prewedding/20.jpeg') }}">
+
+    </div>
+    <div class="landscape">
+
+        <img src="{{ url_for('static', filename='images/prewedding/21.JPG') }}">
+
+    </div>
+    <div class="landscape">
+
+        <img src="{{ url_for('static', filename='images/prewedding/22.jpeg') }}">
+
+    </div>
+    <div class="landscape">
+
+        <img src="{{ url_for('static', filename='images/prewedding/23.jpeg') }}">
+
+    </div>
+    <div class="landscape">
+
+        <img src="{{ url_for('static', filename='images/prewedding/24.jpeg') }}">
+
+    </div>
+
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-icons">
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+        <a href="#"><i class="fab fa-youtube"></i></a>
+
+    </div>
+
+    <p>
+        © AN Photography | Capturing Timeless Memories
+    </p>
+
+</footer>
+
+</body>
+
+</html>

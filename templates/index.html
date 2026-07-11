@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AN Photography</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500&family=Allura&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- HERO / WELCOME -->
+  <header class="hero">
+    <nav class="navbar">
+  <ul class="nav-links">
+  <li><a href="/">Home</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li><a href="/about">About Us</a></li>
+<li><a href="/book">Book Us</a></li>
+</ul>
+</nav>
+
+    <div class="hero-content">
+      <h1 class="animate-on-scroll fade-up">ABHIJIT NAIKARE PHOTOGRAPHY</h1>
+      <h2 class="animate-on-scroll fade-up">“Where Every Shot is a Masterpiece”</h2>
+
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/abhijitnaikare_photography?utm_source=qr&igsh=MTJlYWw3NDd5b3lhZQ=="
+          target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://wa.me/message/FWDNQPSUROA6K1" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="https://youtube.com/@kathashortss?si=LOLkoHupBWIJM8Tg" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+
+
+      <div>
+      <a href="/gallery" class="gallery-btn">View Gallery</a>
+    </div>
+  </header>
+
+  <!-- 9 IMAGE GRID -->
+  <section class="grid-9" id="gallery-preview">
+    <img src="{{ url_for('static', filename='images/final1pg.jpeg') }}" class="animate-on-scroll fade-up delay-100">
+  </section>
+
+ <div class="bride-btn-wrapper">
+    <a href="/bride" class="bride-btn">OUR BRIDES</a>
+</div>
+
+  <section class="services" id="services">
+    <h2 class="animate-on-scroll fade-up">WELCOME TO </h2>
+    <h3> ABHIJIT NAIKARE PHOTOGRAPHY </h3>
+
+    <div class="service-list">
+      <div class="animate-on-scroll fade-up delay-100">In every corner of India, there are deep emotions and untold stories of the land waiting to be discovered, like the wisdom shared between a caring father and a nurturing mother.
+As an artist, I'm here to capture and share the essence of this land, preserving our rich culture and architectural beauty. In each frame, I aim to interlace the heartbeats of our history, hopes, dreams, and aspirations, showcasing the heart of our nation"</div>
+    </div>
+  </section>
+
+  <section class="grid-9" id="gallery-preview">
+    <section class="photo-story-section">
+
+  <!-- LEFT WHITE AREA (TAB CONTENT) -->
+  <div class="photo-story-text">
+    <div class="tab-label">Experience</div>
+
+    <h2>7 Years of Experience</h2>
+    <h3>Our Special Attention On Stories</h3>
+
+    <p class="highlight">Memories That Last:</p>
+
+    <p>
+      Our mission is to provide you with photographs that become cherished heirlooms,
+      evoking the emotions, love, and joy of your wedding day every time you look at them.
+    </p>
+
+    <p>
+      When you choose Abhijit Naikare Photography you're selecting a team dedicated
+      to making your wedding memories truly exceptional.
+    </p>
+  </div>
+
+  <!-- YOUR EXISTING 4 PHOTO GRID -->
+  <div class="story-grid">
+     <img src="{{ url_for('static', filename='images/002.jpeg') }}" class="animate-on-scroll fade-up delay-100"><!-- your images remain exactly same -->
+  </div>
+
+</section>
+</section>
+
+  <!-- ABOUT US -->
+  <section class="why-section">
+
+    <div class="why-image">
+       <img src="{{ url_for('static', filename='images/about.jpeg') }}" class="animate-on-scroll fade-up delay-100">
+    </div>
+
+    <div class="why-content tab-card">
+        <h5 class="section-label">WHY TO CHOOSE US ?</h5>
+        
+        <h2>
+            Moments. <span>Not Poses.</span>
+        </h2>
+
+        <p>
+            We believe photography is not about poses, but about emotions that live forever. 
+            Every journey begins quietly. Ours began with a simple love for observing people, 
+            traditions, and fleeting moments that pass too quickly to be noticed.
+        </p>
+
+        <div class="why-points">
+            <div>
+                <h4>Authentic Storytelling</h4>
+                <p>We capture truth, not trends.</p>
+            </div>
+            <div>
+                <h4>Heritage Aesthetic</h4>
+                <p>Inspired by timeless traditions.</p>
+            </div>
+            <div>
+                <h4>Patience & Precision</h4>
+                <p>We wait for the right moment.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+ <section class="heritage-grid-section">
+
+  <div class="heritage-grid">
+
+    <div class="grid-item">
+      <img src="{{ url_for('static', filename='images/square1.jpeg') }}">
+    </div>
+
+    <div class="grid-item">
+     <img src="{{ url_for('static', filename='images/square2.jpeg') }}">
+    </div>
+
+    <div class="grid-item">
+     <img src="{{ url_for('static', filename='images/square3.jpeg') }}">
+    </div>
+
+    <div class="grid-item">
+     <img src="{{ url_for('static', filename='images/square4.jpeg') }}">
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about-section">
+
+  <div class="about-frame">
+
+    <!-- IMAGE -->
+    <div class="about-image">
+      <img src="{{ url_for('static', filename='images/whyimage.jpeg') }}">
+    </div>
+
+    <!-- TEXT TAB -->
+    <div class="about-content tab-card">
+      <h5 class="section-label">ABOUT US</h5>
+
+      <h2>
+        Preserving <span>Real Emotions</span>
+      </h2>
+
+      <p>
+        We are storytellers who believe in capturing 
+        <span class="key">real emotions</span>, 
+        <span class="key">cultural beauty</span> and 
+        <span class="key">unspoken moments</span>.
+      </p>
+
+      <div class="about-points">
+        <div>
+          <h4>Traditional Approach</h4>
+          <p>Inspired by heritage.</p>
+        </div>
+
+        <div>
+          <h4>Emotion First</h4>
+          <p>Moments over poses.</p>
+        </div>
+
+        <div>
+          <h4>Timeless Frames</h4>
+          <p>Stories that last forever.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  <script>
+    function openTab(evt, tabId) {
+      const contents = evt.target.closest('.info-text').querySelectorAll('.tab-content');
+      const tabs = evt.target.closest('.tabs').querySelectorAll('.tab');
+
+      contents.forEach(c => c.classList.remove('active'));
+      tabs.forEach(t => t.classList.remove('active'));
+
+      document.getElementById(tabId).classList.add('active');
+      evt.target.classList.add('active');
+    }
+  </script>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <h2 class="animate-on-scroll fade-up">MAKE YOUR WEDDING A WONDERFUL STORY</h2>
+
+    <div class="service-list">
+      <div class="animate-on-scroll fade-up delay-100">Candid Photography</div>
+      <div class="animate-on-scroll fade-up delay-200">Traditional Photography</div>
+      <div class="animate-on-scroll fade-up delay-300">Videography</div>
+      <div class="animate-on-scroll fade-up delay-400">Cinematography</div>
+    </div>
+  </section>
+
+  <!-- FEATURE IMAGES -->
+  <!-- FEATURE IMAGE GRID (3 PHOTOS) -->
+  <section class="feature-grid">
+    <img src="{{ url_for('static', filename='images/feature1.jpeg') }}" class="animate-on-scroll zoom-in delay-100">
+    <img src="{{ url_for('static', filename='images/feature2.jpeg') }}" class="animate-on-scroll zoom-in delay-200">
+    <img src="{{ url_for('static', filename='images/feature3.jpeg') }}" class="animate-on-scroll zoom-in delay-300">
+  </section>
+
+<section class="founder-section">
+
+    <div class="founder-wrapper">
+
+        <div class="founder-image">
+            <img src="{{ url_for('static', filename='images/founder.jpeg') }}">
+        </div>
+
+        <div class="founder-details">
+
+            <h2 class="founder-name">Abhijit Naikare</h2>
+            <p class="founder-role">Founder & Lead Photographer</p>
+
+            <div class="contact-line">
+                <span>📞</span>
+                <p>+91 9373649565</p>
+            </div>
+
+            <div class="contact-line">
+                <span>✉️</span>
+                <p>abhijitnaikare7@gmail.com</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<p class="book-signature">
+        © Abhijit Naikare Photography , Pune, India <br> 
+        Website Design by Shravani Shelke
+    </p>
+
+</body>
+</html>
