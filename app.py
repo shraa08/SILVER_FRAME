@@ -10,8 +10,8 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
-app.config['MAIL_USERNAME'] = 'shelkeshravani43@gmail.com'
-app.config['MAIL_PASSWORD'] = 'pjxsintnjmpesuqa'
+app.config['MAIL_USERNAME'] = 'abhijitnaikare7@gmail.com'
+app.config['MAIL_PASSWORD'] = 'wyablsackygasigv'
 
 mail = Mail(app)
 
@@ -79,7 +79,7 @@ def book():
         msg = Message(
             subject="New Booking Enquiry",
             sender=app.config['MAIL_USERNAME'],
-            recipients=["shelkeshravani43@gmail.com"]
+            recipients=["abhijitnaikare7gmail.com"]
         )
 
         msg.body = f"""
