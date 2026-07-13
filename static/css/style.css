@@ -154,6 +154,41 @@ body {
   letter-spacing: 1px;
   color: #1e1509;
 }
+/* ===============================
+   HERO TITLE ANIMATION
+================================= */
+
+.hero-content h1,
+.hero-content h2{
+
+    opacity:0;
+    transform:translateY(60px);
+
+    animation:heroSlide 1.8s ease forwards;
+
+}
+
+.hero-content h1{
+    animation-delay:.3s;
+}
+
+.hero-content h2{
+    animation-delay:.9s;
+}
+
+@keyframes heroSlide{
+
+    0%{
+        opacity:0;
+        transform:translateY(60px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}         
 
 
 /* SOCIAL ICONS */
@@ -1504,30 +1539,46 @@ MAIN GALLERY HERO
 .gallery-overlay{
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.35);
+    background:linear-gradient(
+to top,
+rgba(0,0,0,.55),
+rgba(0,0,0,.18),
+rgba(0,0,0,.05)
+);
 
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
 
     padding:80px;
+  
 }
 
 .gallery-overlay h1{
 
-    color:white;
+    color:rgba(255,255,255,.88);
+
     font-size:65px;
+
     font-family:'Playfair Display',serif;
 
-    margin-bottom:20px;
-}
+    margin-bottom:18px;
 
+    letter-spacing:3px;
+
+    text-shadow:0 4px 15px rgba(0,0,0,.25);
+
+}
 .gallery-overlay p{
 
-    color:white;
-    font-size:20px;
+    color:rgba(255,255,255,.75);
 
-    margin-bottom:35px;
+    font-size:19px;
+
+    line-height:1.8;
+
+    max-width:650px;
+
 }
 
 .gallery-view-btn {

@@ -79,7 +79,7 @@ def book():
         msg = Message(
             subject="New Booking Enquiry",
             sender=app.config['MAIL_USERNAME'],
-            recipients=["abhijitnaikare7gmail.com"]
+            recipients=["abhijitnaikare7@gmail.com"]
         )
 
         msg.body = f"""
