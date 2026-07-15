@@ -6,6 +6,7 @@
     <title>Baby Shoot Gallery | AN Photography</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/wedding.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
@@ -14,45 +15,102 @@
 
 <body>
 
+<!-- ================= HERO ================= -->
+
 <section class="gallery-hero">
+
     <img src="{{ url_for('static', filename='images/babyshoot/hero.jpeg') }}">
+
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
+
         <h1>Baby Shoot Gallery</h1>
-        <p>Capturing the sweetest smiles and precious childhood memories.</p>
+
+        <p>
+            Capturing the sweetest smiles and precious childhood memories.
+        </p>
+
     </div>
+
 </section>
+
+<!-- ================= GALLERY ================= -->
 
 <section id="gallery" class="masonry-gallery">
 
-<div class="landscape"><img src="{{ url_for('static', filename='images/babyshoot/1.jpeg') }}"></div>
+    <div class="portrait-grid">
 
-<div class="portrait-grid">
+        <a href="{{ url_for('static', filename='images/babyshoot/2.jpeg') }}" class="glightbox" data-gallery="babyshoot">
+            <img src="{{ url_for('static', filename='images/babyshoot/2.jpeg') }}">
+        </a>
 
-<img src="{{ url_for('static', filename='images/babyshoot/2.jpeg') }}">
-<img src="{{ url_for('static', filename='images/babyshoot/3.jpeg') }}">
-<img src="{{ url_for('static', filename='images/babyshoot/4.jpeg') }}">
-<img src="{{ url_for('static', filename='images/babyshoot/5.jpeg') }}">
-<img src="{{ url_for('static', filename='images/babyshoot/6.jpeg') }}">
-<img src="{{ url_for('static', filename='images/babyshoot/7.jpeg') }}">
-<img src="{{ url_for('static', filename='images/babyshoot/8.jpeg') }}">
-<img src="{{ url_for('static', filename='images/babyshoot/9.jpeg') }}">
-<img src="{{ url_for('static', filename='images/babyshoot/10.jpeg') }}">
+        <a href="{{ url_for('static', filename='images/babyshoot/3.jpeg') }}" class="glightbox" data-gallery="babyshoot">
+            <img src="{{ url_for('static', filename='images/babyshoot/3.jpeg') }}">
+        </a>
 
-</div>
+        <a href="{{ url_for('static', filename='images/babyshoot/4.jpeg') }}" class="glightbox" data-gallery="babyshoot">
+            <img src="{{ url_for('static', filename='images/babyshoot/4.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/babyshoot/5.jpeg') }}" class="glightbox" data-gallery="babyshoot">
+            <img src="{{ url_for('static', filename='images/babyshoot/5.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/babyshoot/6.jpeg') }}" class="glightbox" data-gallery="babyshoot">
+            <img src="{{ url_for('static', filename='images/babyshoot/6.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/babyshoot/7.jpeg') }}" class="glightbox" data-gallery="babyshoot">
+            <img src="{{ url_for('static', filename='images/babyshoot/7.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/babyshoot/9.jpeg') }}" class="glightbox" data-gallery="babyshoot">
+            <img src="{{ url_for('static', filename='images/babyshoot/9.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/babyshoot/10.jpeg') }}" class="glightbox" data-gallery="babyshoot">
+            <img src="{{ url_for('static', filename='images/babyshoot/10.jpeg') }}">
+        </a>
+
+    </div>
 
 </section>
 
-<footer class="footer">
-<div class="footer-icons">
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-whatsapp"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
-</div>
+<!-- ================= FOOTER ================= -->
 
-<p>© AN Photography | Capturing Timeless Memories</p>
+<footer class="footer">
+
+    <div class="footer-icons">
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+        <a href="#"><i class="fab fa-youtube"></i></a>
+
+    </div>
+
+    <p>
+        © AN Photography | Capturing Timeless Memories
+    </p>
+
 </footer>
+
+<!-- ================= GLIGHTBOX ================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script>
+const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    zoomable: true,
+    openEffect: 'zoom',
+    closeEffect: 'fade'
+});
+</script>
 
 </body>
 </html>

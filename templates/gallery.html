@@ -2,14 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>AN Photography</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500&family=Allura&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AN Photography | Gallery</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500&family=Allura&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -17,25 +26,28 @@
 <!-- ================= NAVBAR ================= -->
 
 <nav class="navbar">
+
     <ul class="nav-links">
+
         <li><a href="/">Home</a></li>
+
         <li><a href="/gallery">Gallery</a></li>
+
         <li><a href="/about">About Us</a></li>
+
         <li><a href="/book">Book Us</a></li>
+
     </ul>
+
 </nav>
 
-
-
-
-
-<!-- ================================================= -->
-<!-- WEDDING -->
-<!-- ================================================= -->
+<!-- ================= WEDDING ================= -->
 
 <section class="gallery-hero">
 
-   <img src="static/images/wedding_hero1.JPG">
+    <img src="{{ url_for('static', filename='images/wedding_hero1.JPG') }}"
+         alt="Wedding Photography"
+         loading="lazy">
 
     <div class="gallery-overlay">
 
@@ -51,17 +63,13 @@
 
 </section>
 
-
-
-
-
-<!-- ================================================= -->
-<!-- PRE WEDDING -->
-<!-- ================================================= -->
+<!-- ================= PRE WEDDING ================= -->
 
 <section class="gallery-hero">
 
-    <img src="static/images/pre_wedding.jpeg">
+    <img src="{{ url_for('static', filename='images/pre_wedding.jpeg') }}"
+         alt="Pre Wedding Photography"
+         loading="lazy">
 
     <div class="gallery-overlay">
 
@@ -77,18 +85,13 @@
 
 </section>
 
-
-
-
-
-
-<!-- ================================================= -->
-<!-- BABY SHOOT -->
-<!-- ================================================= -->
+<!-- ================= BABY SHOOT ================= -->
 
 <section class="gallery-hero">
 
-   <img src="static/images/babyshoot_hero.jpeg">
+    <img src="{{ url_for('static', filename='images/babyshoot_hero.jpeg') }}"
+         alt="Baby Shoot"
+         loading="lazy">
 
     <div class="gallery-overlay">
 
@@ -104,19 +107,13 @@
 
 </section>
 
-
-
-
-
-
-
-<!-- ================================================= -->
-<!-- MATERNITY -->
-<!-- ================================================= -->
+<!-- ================= MATERNITY ================= -->
 
 <section class="gallery-hero">
 
-    <img src="static/images/maternity_hero.jpeg">
+    <img src="{{ url_for('static', filename='images/maternity_hero.jpeg') }}"
+         alt="Maternity Photography"
+         loading="lazy">
 
     <div class="gallery-overlay">
 
@@ -132,25 +129,19 @@
 
 </section>
 
-
-
-
-
-
-
-<!-- ================================================= -->
-<!-- OTHERS -->
-<!-- ================================================= -->
+<!-- ================= PORTFOLIO ================= -->
 
 <section class="gallery-hero">
 
-    <img src="static/images/portfolio_hero.jpeg">
+    <img src="{{ url_for('static', filename='images/portfolio_hero.jpeg') }}"
+         alt="Photography Portfolio"
+         loading="lazy">
 
     <div class="gallery-overlay">
 
         <h1>Portfolio</h1>
 
-        <p></p>
+        <p>Creative portraits, fashion and lifestyle photography.</p>
 
         <a href="/portfolio" class="gallery-view-btn">
             View Portfolio Gallery
@@ -160,9 +151,22 @@
 
 </section>
 
+<!-- ================= GLIGHTBOX ================= -->
 
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
+<script>
 
+const lightbox = GLightbox({
+
+    touchNavigation: true,
+    loop: true,
+    zoomable: true,
+    autoplayVideos: true
+
+});
+
+</script>
 
 </body>
 </html>

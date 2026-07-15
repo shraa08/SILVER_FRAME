@@ -3,25 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Wedding Gallery | AN Photography</title>
 
-   <link rel="stylesheet" href="{{ url_for('static', filename='css/wedding.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/wedding.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- ================= HERO ================= -->
-
 <section class="gallery-hero">
 
-    <img src="{{ url_for('static', filename='images/wedding/hero.jpeg') }}">
+    <img src="{{ url_for('static', filename='images/wedding/hero.jpeg') }}" alt="Wedding Hero">
 
     <div class="hero-overlay"></div>
 
@@ -37,121 +36,301 @@
 
 </section>
 
-<!-- ================= GALLERY ================= -->
-
 <section id="gallery" class="masonry-gallery">
 
-    <!-- Landscape -->
+<!-- Landscape -->
 
-    <div class="landscape">
-        <img src="{{ url_for('static', filename='images/wedding/1.jpeg') }}">
-    </div>
+<div class="landscape">
 
-    <!-- Portrait Grid -->
+<a href="{{ url_for('static', filename='images/wedding/1.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
 
-    <div class="portrait-grid">
+<img src="{{ url_for('static', filename='images/wedding/1.jpeg') }}"
+loading="lazy"
+alt="Wedding Photo 1">
 
-        <img src="{{ url_for('static', filename='images/wedding/2.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/wedding/3.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/wedding/4.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/wedding/5.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/wedding/6.JPG') }}">
-        <img src="{{ url_for('static', filename='images/wedding/7.JPG') }}">
+</a>
 
-    </div>
+</div>
 
-    <!-- Landscape -->
+<!-- Portrait -->
 
-    <div class="landscape">
+<div class="portrait-grid">
 
-        <img src="{{ url_for('static', filename='images/wedding/8.jpeg') }}">
+<a href="{{ url_for('static', filename='images/wedding/2.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/2.jpeg') }}" loading="lazy" alt="">
+</a>
 
-    </div>
+<a href="{{ url_for('static', filename='images/wedding/3.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/3.jpeg') }}" loading="lazy" alt="">
+</a>
 
-    <!-- Portrait -->
+<a href="{{ url_for('static', filename='images/wedding/4.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/4.jpeg') }}" loading="lazy" alt="">
+</a>
 
-    <div class="portrait-grid">
+<a href="{{ url_for('static', filename='images/wedding/5.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/5.jpeg') }}" loading="lazy" alt="">
+</a>
 
-        <img src="{{ url_for('static', filename='images/wedding/9.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/wedding/10.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/wedding/11.JPG') }}">
-        <img src="{{ url_for('static', filename='images/wedding/12.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/wedding/13.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/wedding/14.jpeg') }}">
+<a href="{{ url_for('static', filename='images/wedding/6.JPG') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/6.JPG') }}" loading="lazy" alt="">
+</a>
 
-    </div>
+<a href="{{ url_for('static', filename='images/wedding/7.JPG') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/7.JPG') }}" loading="lazy" alt="">
+</a>
 
-    <!-- Landscape -->
+</div>
 
-    <div class="landscape">
+<!-- Landscape -->
 
-        <img src="{{ url_for('static', filename='images/wedding/15.jpeg') }}">
+<div class="landscape">
 
-    </div>
+<a href="{{ url_for('static', filename='images/wedding/8.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
 
-    <!-- Portrait -->
+<img src="{{ url_for('static', filename='images/wedding/8.jpeg') }}"
+loading="lazy"
+alt="Wedding Photo 8">
 
-    <div class="portrait-grid">
+</a>
 
-        <img src="{{ url_for('static', filename='images/wedding/16.JPG') }}">
-        <img src="{{ url_for('static', filename='images/wedding/17.JPG') }}">
-        <img src="{{ url_for('static', filename='images/wedding/18.JPG') }}">
-        <img src="{{ url_for('static', filename='images/wedding/19.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/wedding/20.JPG') }}">
-        <img src="{{ url_for('static', filename='images/wedding/21.JPG') }}">
+</div>
 
-    </div>
+<!-- Portrait -->
 
-    <!-- Landscape -->
+<div class="portrait-grid">
 
-    <div class="landscape">
+<a href="{{ url_for('static', filename='images/wedding/9.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/9.jpeg') }}" loading="lazy">
+</a>
 
-        <img src="{{ url_for('static', filename='images/wedding/22.JPG') }}">
+<a href="{{ url_for('static', filename='images/wedding/10.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/10.jpeg') }}" loading="lazy">
+</a>
 
-    </div>
+<a href="{{ url_for('static', filename='images/wedding/11.JPG') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/11.JPG') }}" loading="lazy">
+</a>
 
-    <div class="portrait-grid">
+<a href="{{ url_for('static', filename='images/wedding/12.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/12.jpeg') }}" loading="lazy">
+</a>
 
-        <img src="{{ url_for('static', filename='images/wedding/23.JPG') }}">
-        <img src="{{ url_for('static', filename='images/wedding/24.JPG') }}">
-        <img src="{{ url_for('static', filename='images/wedding/25.JPG') }}">
+<a href="{{ url_for('static', filename='images/wedding/13.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/13.jpeg') }}" loading="lazy">
+</a>
 
-    </div>
+<a href="{{ url_for('static', filename='images/wedding/14.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/14.jpeg') }}" loading="lazy">
+</a>
 
-    <div class="landscape">
-        <img src="{{ url_for('static', filename='images/wedding/26.jpeg') }}">
-    </div>
+</div>
 
-    <div class="landscape">
-        <img src="{{ url_for('static', filename='images/wedding/27.jpeg') }}">
-    </div> 
+<!-- Landscape -->
 
-    <div class="landscape">
-        <img src="{{ url_for('static', filename='images/wedding/28.jpeg') }}">
-    </div>
+<div class="landscape">
 
-    <div class="landscape">
-        <img src="{{ url_for('static', filename='images/wedding/29.jpeg') }}">
-    </div>  
+<a href="{{ url_for('static', filename='images/wedding/15.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
 
-    <div class="landscape">
-        <img src="{{ url_for('static', filename='images/wedding/30.jpeg') }}">
-    </div> 
+<img src="{{ url_for('static', filename='images/wedding/15.jpeg') }}"
+loading="lazy">
 
-    <div class="landscape">
-        <img src="{{ url_for('static', filename='images/wedding/32.jpeg') }}">
-    </div>
+</a>
 
-    <div class="landscape">
-        <img src="{{ url_for('static', filename='images/wedding/33.jpeg') }}">
-    </div>
+</div>
 
-    <div class="landscape">
-        <img src="{{ url_for('static', filename='images/wedding/34.jpeg') }}">
-    </div>
+<!-- Portrait -->
 
-    </div>
+<div class="portrait-grid">
 
+<a href="{{ url_for('static', filename='images/wedding/16.JPG') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/16.JPG') }}" loading="lazy">
+</a>
+
+<a href="{{ url_for('static', filename='images/wedding/17.JPG') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/17.JPG') }}" loading="lazy">
+</a>
+
+<a href="{{ url_for('static', filename='images/wedding/18.JPG') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/18.JPG') }}" loading="lazy">
+</a>
+<a href="{{ url_for('static', filename='images/wedding/19.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/19.jpeg') }}" loading="lazy" alt="Wedding Photo 19">
+</a>
+
+<a href="{{ url_for('static', filename='images/wedding/20.JPG') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/20.JPG') }}" loading="lazy" alt="Wedding Photo 20">
+</a>
+
+<a href="{{ url_for('static', filename='images/wedding/21.JPG') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/21.JPG') }}" loading="lazy" alt="Wedding Photo 21">
+</a>
+
+</div>
+
+<!-- Landscape -->
+
+<div class="landscape">
+
+<a href="{{ url_for('static', filename='images/wedding/22.JPG') }}"
+class="glightbox"
+data-gallery="wedding">
+
+<img src="{{ url_for('static', filename='images/wedding/22.JPG') }}"
+loading="lazy"
+alt="Wedding Photo 22">
+
+</a>
+
+</div>
+
+<!-- Portrait -->
+
+<div class="portrait-grid">
+
+<a href="{{ url_for('static', filename='images/wedding/23.JPG') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/23.JPG') }}" loading="lazy" alt="Wedding Photo 23">
+</a>
+
+<a href="{{ url_for('static', filename='images/wedding/24.JPG') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/24.JPG') }}" loading="lazy" alt="Wedding Photo 24">
+</a>
+
+<a href="{{ url_for('static', filename='images/wedding/25.JPG') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/25.JPG') }}" loading="lazy" alt="Wedding Photo 25">
+</a>
+
+</div>
+
+<!-- Landscape -->
+
+<div class="landscape">
+
+<a href="{{ url_for('static', filename='images/wedding/26.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/26.jpeg') }}" loading="lazy" alt="Wedding Photo 26">
+</a>
+
+</div>
+
+<div class="landscape">
+
+<a href="{{ url_for('static', filename='images/wedding/27.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/27.jpeg') }}" loading="lazy" alt="Wedding Photo 27">
+</a>
+
+</div>
+
+<div class="landscape">
+
+<a href="{{ url_for('static', filename='images/wedding/28.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/28.jpeg') }}" loading="lazy" alt="Wedding Photo 28">
+</a>
+
+</div>
+
+<div class="landscape">
+
+<a href="{{ url_for('static', filename='images/wedding/29.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/29.jpeg') }}" loading="lazy" alt="Wedding Photo 29">
+</a>
+
+</div>
+
+<div class="landscape">
+
+<a href="{{ url_for('static', filename='images/wedding/30.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/30.jpeg') }}" loading="lazy" alt="Wedding Photo 30">
+</a>
+
+</div>
+
+<div class="landscape">
+
+<a href="{{ url_for('static', filename='images/wedding/32.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/32.jpeg') }}" loading="lazy" alt="Wedding Photo 32">
+</a>
+
+</div>
+
+<div class="landscape">
+
+<a href="{{ url_for('static', filename='images/wedding/33.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/33.jpeg') }}" loading="lazy" alt="Wedding Photo 33">
+</a>
+
+</div>
+
+<div class="landscape">
+
+<a href="{{ url_for('static', filename='images/wedding/34.jpeg') }}"
+class="glightbox"
+data-gallery="wedding">
+<img src="{{ url_for('static', filename='images/wedding/34.jpeg') }}" loading="lazy" alt="Wedding Photo 34">
+</a>
+
+</div>
 
 </section>
 
@@ -161,11 +340,17 @@
 
     <div class="footer-icons">
 
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/abhijitnaikare_photography" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
 
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://wa.me/message/FWDNQPSUROA6K1" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
 
-        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="https://youtube.com/@kathashortss" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
 
     </div>
 
@@ -175,6 +360,33 @@
 
 </footer>
 
-</body>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
+<script>
+
+const lightbox = GLightbox({
+
+    selector: '.glightbox',
+
+    touchNavigation: true,
+
+    loop: true,
+
+    zoomable: true,
+
+    draggable: true,
+
+    openEffect: 'zoom',
+
+    closeEffect: 'fade',
+
+    slideEffect: 'slide',
+
+    autoplayVideos: false
+
+});
+
+</script>
+
+</body>
 </html>

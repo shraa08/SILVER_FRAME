@@ -13,11 +13,13 @@
         gap:35px;
     }
 
-    .hero-content{
-        margin-top:48vh;
-        padding:0 25px;
-    }
+   .hero-content{
 
+    margin-top:52vh;
+
+    padding:35px 20px 0;
+
+}
     .main-heading{
         font-size:58px;
     }

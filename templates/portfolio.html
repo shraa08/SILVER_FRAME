@@ -6,16 +6,16 @@
     <title>Portfolio Gallery | AN Photography</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/wedding.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+
+<!-- ================= HERO ================= -->
 
 <section class="gallery-hero">
 
@@ -35,51 +35,109 @@
 
 </section>
 
+<!-- ================= GALLERY ================= -->
+
 <section id="gallery" class="masonry-gallery">
 
     <div class="landscape">
-        <img src="{{ url_for('static', filename='images/portfolio/1.jpeg') }}">
+        <a href="{{ url_for('static', filename='images/portfolio/1.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/1.jpeg') }}">
+        </a>
     </div>
 
     <div class="portrait-grid">
-        <img src="{{ url_for('static', filename='images/portfolio/2.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/portfolio/3.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/portfolio/4.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/portfolio/5.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/portfolio/6.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/portfolio/7.jpeg') }}">
+
+        <a href="{{ url_for('static', filename='images/portfolio/2.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/2.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/portfolio/3.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/3.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/portfolio/4.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/4.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/portfolio/5.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/5.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/portfolio/6.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/6.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/portfolio/7.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/7.jpeg') }}">
+        </a>
+
     </div>
 
     <div class="landscape">
-        <img src="{{ url_for('static', filename='images/portfolio/8.jpeg') }}">
+        <a href="{{ url_for('static', filename='images/portfolio/8.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/8.jpeg') }}">
+        </a>
     </div>
 
-
     <div class="portrait-grid">
-        <img src="{{ url_for('static', filename='images/portfolio/9.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/portfolio/10.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/portfolio/11.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/portfolio/12.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/portfolio/13.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/portfolio/14.jpeg') }}">
+
+        <a href="{{ url_for('static', filename='images/portfolio/9.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/9.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/portfolio/10.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/10.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/portfolio/11.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/11.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/portfolio/12.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/12.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/portfolio/13.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/13.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/portfolio/14.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/14.jpeg') }}">
+        </a>
+
     </div>
 
     <div class="landscape">
-        <img src="{{ url_for('static', filename='images/portfolio/15.jpg') }}">
+        <a href="{{ url_for('static', filename='images/portfolio/15.jpg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/15.jpg') }}">
+        </a>
     </div>
 
     <div class="portrait-grid">
-        <img src="{{ url_for('static', filename='images/portfolio/17.jpg') }}">
-        <img src="{{ url_for('static', filename='images/portfolio/18.jpeg') }}">
-        <img src="{{ url_for('static', filename='images/portfolio/19.jpeg') }}">
+
+        <a href="{{ url_for('static', filename='images/portfolio/17.jpg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/17.jpg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/portfolio/18.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/18.jpeg') }}">
+        </a>
+
+        <a href="{{ url_for('static', filename='images/portfolio/19.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/19.jpeg') }}">
+        </a>
+
     </div>
 
-     <div class="landscape">
-        <img src="{{ url_for('static', filename='images/portfolio/20.jpeg') }}">
+    <div class="landscape">
+        <a href="{{ url_for('static', filename='images/portfolio/20.jpeg') }}" class="glightbox" data-gallery="portfolio">
+            <img src="{{ url_for('static', filename='images/portfolio/20.jpeg') }}">
+        </a>
     </div>
 
-    
 </section>
+
+<!-- ================= FOOTER ================= -->
 
 <footer class="footer">
 
@@ -98,6 +156,19 @@
     </p>
 
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script>
+const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    zoomable: true,
+    openEffect: 'zoom',
+    closeEffect: 'fade'
+});
+</script>
 
 </body>
 </html>
