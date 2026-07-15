@@ -188,20 +188,6 @@
 
     }
 
-    /* Gallery Hero */
-
-    .gallery-overlay{
-        padding:30px;
-    }
-
-    .gallery-overlay h1{
-        font-size:36px;
-    }
-
-    .gallery-overlay p{
-        font-size:16px;
-    }
-
     /* Forms */
 
     .book-form .row{
