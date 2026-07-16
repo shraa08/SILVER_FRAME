@@ -1266,9 +1266,28 @@ body {
     background: #f5f5f5;
 }
 
-.checkbox-group label {
-    display: block;
-    margin-bottom: 10px;
+.checkbox-group{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:10px;
+}
+
+.checkbox-group label{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    cursor:pointer;
+    font-size:17px;
+    color:#4b2e16;
+}
+
+.checkbox-group input[type="radio"]{
+    width:18px;
+    height:18px;
+    accent-color:#5A2E0C;
+    cursor:pointer;
+    margin:0;
 }
 
 .submit-btn {
